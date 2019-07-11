@@ -5,5 +5,4 @@ using UnityEngine;
 public abstract class ScenesManager : MonoBehaviour {
 	protected SceneChanger _scene_changer = new SceneChanger( );
 	protected abstract void NextScene( );
-	
 }
