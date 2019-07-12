@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ResultManager : ScenesManager {
+    int a = 0;
+
+    Controller controller = new Controller();
 
 	// Use this for initialization
 	void Start () {
@@ -12,7 +15,7 @@ public class ResultManager : ScenesManager {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (controller.getCotrollerInput(Controller.INPUT_TYPE.TRIGGER_DOWN) == true) {
 
             NextScene();
         }
